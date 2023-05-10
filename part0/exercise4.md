@@ -33,7 +33,7 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
     Note right of browser: Browser fetches favicon.ico in the middle of fetching JSON file
     browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
-    server-->>browser: <html><head></head><body><a href="/stats">Course stats</a></body></html>
+    server-->>browser: Course stats
     activate server
     server-->>browser: content: "", date: "2023-05-10T14:19:35.148Z", content: "", date: "2023-05-10T14:20:05.809Z",…
 
