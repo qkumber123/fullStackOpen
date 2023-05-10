@@ -1,4 +1,6 @@
 ## Mermaid file
+## mermaid markup not working even though editor gives it the okay
+## please see https://github.com/qkumber123/fullStackOpen/blob/master/part0/exercise4.png 
 
 ```mermaid
   
