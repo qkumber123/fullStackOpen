@@ -7,7 +7,7 @@ sequenceDiagram
     participant server
 
     Note right of browser: The user presses the button to sumbit a POST request method to the server
-    browser->>server: Post https://studies.cs.helsinki.fi/exampleapp/new_note --- payload note: 'Hello World' 
+    browser->>server: Post https://studies.cs.helsinki.fi/exampleapp/new_note --- payload note: 'Hello World'
     activate server
     deactivate server
 
@@ -35,7 +35,7 @@ sequenceDiagram
     browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
     server-->>browser: Course stats
     activate server
-    server-->>browser: content: "", date: "2023-05-10T14:19:35.148Z", content: "", date: "2023-05-10T14:20:05.809Z",…
+    server-->>browser: Retrieves Content
 
     deactivate server
 
