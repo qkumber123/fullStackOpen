@@ -11,33 +11,5 @@ sequenceDiagram
     activate server
     deactivate server
 
-    Note right of browser: Browser now GETs HTML && CSS && JS files from server
 
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
-    activate server
-    server-->>browser: HTML document
-    deactivate server
-
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
-    activate server
-    server-->>browser: GET main.css
-    deactivate server
-
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
-    activate server
-    server-->>browser: GET main.js
-    deactivate server
-
-    Note right of browser: Browser fetches JSON while executing the JS file
-
-    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
-    Note right of browser: Browser fetches favicon.ico in the middle of fetching JSON file
-    browser->>server: GET https://studies.cs.helsinki.fi/favicon.ico
-    server-->>browser: Course stats
-    activate server
-    server-->>browser: Retrieves Content
-
-    deactivate server
-
-    Note right of browser: Browser executes the callback function that renders the notes
     ```
